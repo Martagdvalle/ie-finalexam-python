@@ -23,7 +23,7 @@ def test_dummy_wrong_path():
 def test_create_account(testing_client):
     """
     GIVEN a Flask application
-    WHEN the '/accounts' page is posted to (POST)
+    WHEN the '/accounts' page i s posted to (POST)
     THEN check the response is valid
     """
     response = testing_client.post('/accounts', json={'name': 'John Doe', 'currency': '€'})
